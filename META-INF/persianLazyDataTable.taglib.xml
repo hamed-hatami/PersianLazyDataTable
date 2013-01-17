@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd"
+        version="2.0">
+
+    <namespace>http://grid.persian.hatami.ir/lazyDataTable</namespace>
+
+    <tag>
+        <tag-name>persianDataNavigator</tag-name>
+        <component>
+            <component-type>ir.hatami.persian.grid.PersianDataNavigator</component-type>
+            <renderer-type>ir.hatami.persian.grid.PersianDataNavigatorRenderer</renderer-type>
+        </component>
+        <attribute>
+            <description></description>
+            <name>model</name>
+            <required>true</required>
+            <type>ir.hatami.persian.grid.PersianLazyDataModel</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>styleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>id</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <tag-name>persianDataOrderer</tag-name>
+        <component>
+            <component-type>ir.hatami.persian.grid.PersianDataOrderer</component-type>
+            <renderer-type>ir.hatami.persian.grid.PersianDataOrdererRenderer</renderer-type>
+        </component>
+        <attribute>
+            <description></description>
+            <name>model</name>
+            <required>true</required>
+            <type>ir.hatami.persian.grid.PersianLazyDataModel</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>field</name>
+            <required>true</required>
+            <type>java.lang.Object</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>value</name>
+            <required>true</required>
+            <type>java.lang.Object</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>styleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>ascStyleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>descStyleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>id</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+</facelet-taglib>
